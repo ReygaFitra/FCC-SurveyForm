@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>FCC - Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title"><strong>Ramadhan Survey Form</strong></h1>
+        <p id="description">Survey Form Ramadhan 1443H</p>
+      </header>
+      <div class="container">
+        <!-- Form section Start -->
+        <form id="survey-form">
+          <!-- Name start -->
+          <div class="form-group">
+            <label for="name" id="name-label">Nama</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Nama Lengkap" required />
+          </div>
+          <!-- Name end -->
+
+          <!-- Email start -->
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Alamat Email" required />
+          </div>
+          <!-- Email end -->
+
+          <!-- Age start -->
+          <div class="form-group">
+            <label for="number" id="number-label">Usia</label>
+            <input type="number" id="number" name="age" min="15" max="99" class="form-control" placeholder="Usia" required />
+          </div>
+          <!-- Age end -->
+
+          <!-- Birth date start -->
+          <div class="form-group">
+            <label for="date" id="birth-label">Tanggal lahir</label>
+            <input type="date" id="date" class="form-control" placeholder="Tanggal Lahir" required />
+          </div>
+          <!-- Birth date end -->
+
+          <!-- Role start -->
+          <div class="form-group">
+            <p>Status anda sekarang?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+              <option disabled selected value>Silahkan pilih status anda sekarang</option>
+              <option value="pelajar">Pelajar</option>
+              <option value="mahasiswa">Mahasiswa</option>
+              <option value="karyawan">Karyawan</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <!-- Role end -->
+
+          <!-- Gender Start -->
+          <div class="form-group">
+            <p>Jenis Kelamin:</p>
+            <label><input type="radio" name="gender" value="Laki-laki" class="input-radio" checked /> Laki-laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" class="input-radio" /> Perempuan</label>
+          </div>
+          <!-- Gender End -->
+
+          <!-- Activities Start -->
+          <div class="form-group">
+            <p>Aktivitas apa saja yang selalu anda lakukan ketika Ramadhan?</p>
+            <label><input type="checkbox" name="activities" value="tilawah" class="input-checkbox" /> Tilawah Al-Quran</label>
+            <label><input type="checkbox" name="activities" value="hafalan" class="input-checkbox" /> Hafalan Al-Quran</label>
+            <label><input type="checkbox" name="activities" value="sunnah" class="input-checkbox" /> Perbanyak Sholat sunnah</label>
+            <label><input type="checkbox" name="activities" value="work" class="input-checkbox" /> Belajar/Bekerja</label>
+            <label><input type="checkbox" name="activities" value="sedekah" class="input-checkbox" /> Perbanyak Sedekah</label>
+            <label><input type="checkbox" name="activities" value="tidur" class="input-checkbox" /> Tidur</label>
+            <label><input type="checkbox" name="activities" value="lainnya" class="input-checkbox" /> Lainnya...</label>
+          </div>
+          <!-- Activities End -->
+
+          <!-- Reading quran start -->
+          <div class="form-group">
+            <p>Berapa Juz Al-Qur'an yang anda baca setiap harinya?</p>
+            <label><input type="radio" name="read" value="half" class="input-radio" /> Dibawah 1 Juz</label>
+            <label><input type="radio" name="read" value="1-2" class="input-radio" /> 1-2 Juz</label>
+            <label><input type="radio" name="read" value="2-3" class="input-radio" /> 2-3 Juz</label>
+            <label><input type="radio" name="read" value="3-4" class="input-radio" /> 3-4 Juz</label>
+            <label><input type="radio" name="read" value="4-5" class="input-radio" /> 4-5 Juz</label>
+            <label><input type="radio" name="read" value="5-lebih" class="input-radio" /> 5 Juz keatas</label>
+          </div>
+          <!-- Reading quran end -->
+
+          <!-- Text Area start -->
+          <div class="form-group">
+            <p>Apa harapan anda untuk Ramadhan tahun ini dan kedepannya?</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Tuliskan harapan anda..."></textarea>
+          </div>
+          <!-- Text Area end -->
+
+          <!-- Button start -->
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-btn">Submit</button>
+          </div>
+          <!-- Button end -->
+        </form>
+        <!-- Form section End -->
+      </div>
+    </main>
+
+    <script src="CDN_Link.js"></script>
+  </body>
+</html>
